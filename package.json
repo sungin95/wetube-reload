@@ -1,0 +1,28 @@
+{
+  "name": "wetube-reloaded",
+  "version": "1.0.0",
+  "description": "The best way to watch a videos.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sungIn95/wetube-reloaded.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -L --exec babel-node index.js"
+  },
+  "author": "Sungin Lee<dlrkehrud@naver.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sungIn95/wetube-reloaded/issues"
+  },
+  "homepage": "https://github.com/sungIn95/wetube-reloaded#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/node": "^7.17.10",
+    "@babel/preset-env": "^7.18.2",
+    "nodemon": "^2.0.16"
+  }
+}
