@@ -18,3 +18,6 @@ express는 서버를 만들어 준다. listen를 사용하여 서버가 특정 �
 #3.3 정리
 req, res를 사용하여 input, output을 정리 할 수 있다.
 res.end 끝, res.send 서버에 메시지 호출.
+#3.5 정리
+req, res, next 이렇게 인자는 3개가 있다.
+함수의 마지막이 next이면 다음 함수로 넘어 갈 수 있고, res.end or res.send 등 으로 하면 거기에서 다음 함수로 넘어 가지 않는다.
