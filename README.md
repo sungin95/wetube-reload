@@ -15,3 +15,6 @@ ex) "scripts": {
 express는 서버를 만들어 준다. listen를 사용하여 서버가 특정 채널에 소통 하도록 한다.
 #3.2 정리
 .get은 "/"에 들어가면 handleHome호출 + 응답이 있어야 하는데 없어서 무한 로딩
+#3.3 정리
+req, res를 사용하여 input, output을 정리 할 수 있다.
+res.end 끝, res.send 서버에 메시지 호출.
