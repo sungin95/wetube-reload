@@ -52,6 +52,9 @@ export default 는 전체를 보냄. import 함수이름 from ""; 형식을 가�
 export는 특정 한가지 함수만 보낼 수 있다. import { 함수이름 } from "";형식을 가진다.
 ./는 현재 폴더, ../는 이전 폴더를 의미한다.
 순서는 server.js -> routers -> controllers 이다.
-#4.7
+#4.7 정리
 req.params.id => ex) #66 (:id를 불러온다. :id는 일종의 변수 :potato도 가능하다. )
 근데 :id가 맨 위에 있으면 /upload도 id로 인식해 버리므로 :id는 밑에 두도록 한다.
+#4.8 정리
+정규식 이용. (https://regex101.com/)
+(//d+)는 숫자만 가능하다는 표시.
