@@ -1,3 +1,16 @@
+/ -> Home
+/join -> Join
+/login -> Login
+/search -> search
+
+/users/edit -> Edit user
+/users/delete -> Delete user
+
+/videos/watch -> watch Video
+/videos/edit -> Edit Video
+/videos/delete -> Delete Video
+/videos/comments -> Comment on a video
+
 오류 해결
 package.json scripts dev :저장후 자동 재시작이 안되서 "-L" 을 추가하였더니 되었다. 이전에 할 때는 없던 오류였는데 왜 갑자기 생겼는지 모르겠다. 그리고 저기에 주석을 달면 오류가 된다.
 유용해 보이는 정보:
@@ -27,3 +40,8 @@ use를 사용하면 middleware을 모든 상황에 쓸 수 있다. 대신 순서
 morgan은 사용할려면 npm i morgan으로 설치 후 import해 준다.
 morgan은 5가지 기능이 있다. (각자 콜솔에 나오는 값이 다른데 무슨 차이 인지는 모르겠다. 여기서는 그중 "dev"를 사용하였다. )
 morgan은 middleware로 use를 사용하여 나타내 주며니 된다.
+#4.1 정리 Router
+Router는 일종에 통로 비슷한 느낌이다.
+http://localhost:4500/users/edit를 입력하면
+app.use("/users", userRouter);를 통해 userRouter로 이동하고
+userRouter.get("/edit", handleEditUser);를 통해 handleEditUser를 실행한다.
