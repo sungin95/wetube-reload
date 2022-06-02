@@ -23,3 +23,7 @@ req, res, next 이렇게 인자는 3개가 있다.
 함수의 마지막이 next이면 다음 함수로 넘어 갈 수 있고, res.end or res.send 등 으로 하면 거기에서 다음 함수로 넘어 가지 않는다.
 #3.6 정리
 use를 사용하면 middleware을 모든 상황에 쓸 수 있다. 대신 순서는 ues => get순으로.
+#3.11 정리 morgan
+morgan은 사용할려면 npm i morgan으로 설치 후 import해 준다.
+morgan은 5가지 기능이 있다. (각자 콜솔에 나오는 값이 다른데 무슨 차이 인지는 모르겠다. 여기서는 그중 "dev"를 사용하였다. )
+morgan은 middleware로 use를 사용하여 나타내 주며니 된다.
