@@ -47,5 +47,7 @@ http://localhost:4500/users/edit를 입력하면
 app.use("/users", userRouter);를 통해 userRouter로 이동하고
 userRouter.get("/edit", handleEditUser);를 통해 handleEditUser를 실행한다.
 #4.3 정리 export
-export default 는 전체를 보냄.
-export는 특정 한가지 함수만 보낼 수 있다.
+export default 는 전체를 보냄. import 함수이름 from ""; 형식을 가진다.
+export는 특정 한가지 함수만 보낼 수 있다. import { 함수이름 } from "";형식을 가진다.
+./는 현재 폴더, ../는 이전 폴더를 의미한다.
+순서는 server.js -> routers -> controllers 이다.
