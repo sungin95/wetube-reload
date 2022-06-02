@@ -45,3 +45,6 @@ Router는 일종에 통로 비슷한 느낌이다.
 http://localhost:4500/users/edit를 입력하면
 app.use("/users", userRouter);를 통해 userRouter로 이동하고
 userRouter.get("/edit", handleEditUser);를 통해 handleEditUser를 실행한다.
+#4.3 정리 export
+export default 는 전체를 보냄.
+export는 특정 한가지 함수만 보낼 수 있다.
