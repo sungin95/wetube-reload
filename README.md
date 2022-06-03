@@ -76,3 +76,5 @@ block를 사용하여 개성을 줄 수 있다.
 render는 두가지를 받는데.
 첫번쨰는 랜더링 할 파일.
 두번쨰는 변수.ex) res.render("Home", { pageTitle: "Home", potato: "tomato" });(여러개 변수 사용 가능)
+#5.6 정리 css MVP
+href에 MVP홈페이지에서 주소를 갖고 와준다. 끝
