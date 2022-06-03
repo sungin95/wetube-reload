@@ -71,3 +71,8 @@ include를 활용하여 파일 값을 가져 올 수 있고,
 extends(상속)을 활용하여 파일을 연동 시킬 수 있다.
 그리고 각 파일마다 다른 값을
 block를 사용하여 개성을 줄 수 있다.
+#5.4 정리
+좀 더 간편하게 만들기 위해 block head를 제거 하고, base.pug 에 title #{pageTitle} | Wetube를 사용한다. {pageTitle}는 변수이다.
+render는 두가지를 받는데.
+첫번쨰는 랜더링 할 파일.
+두번쨰는 변수.ex) res.render("Home", { pageTitle: "Home", potato: "tomato" });(여러개 변수 사용 가능)
