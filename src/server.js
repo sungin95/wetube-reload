@@ -7,11 +7,12 @@ import videoRouter from "./routers/videoRouter";
 
 
 const PORT = 4500; 
-
+console.log(process.cwd());
 const app = express();
 const logger = morgan("dev");
-app.use(logger);
 
+app.set("view engine", "pug");
+app.use(logger);
 app.use("/", globalRouter);
 app.use("/users", userRouter);
 app.use("/videos", videoRouter);
