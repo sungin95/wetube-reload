@@ -78,3 +78,7 @@ render는 두가지를 받는데.
 두번쨰는 변수.ex) res.render("Home", { pageTitle: "Home", potato: "tomato" });(여러개 변수 사용 가능)
 #5.6 정리 css MVP
 href에 MVP홈페이지에서 주소를 갖고 와준다. 끝
+#5.7 정리
+#{pageTitle} 이랑 =pageTitle이랑은 같다. 하지만 #은 여러개를 =은 하나만 할 수 있다.
+인위적으로 fakeUser를 만든다. (render에 fakeUser을 만들고 fakeUser를 정의해 준다. )
+pug의 if를 활용하여 조건이 참이면 아래 식이 render되게 만들어 준다.
