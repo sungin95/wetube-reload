@@ -62,3 +62,6 @@ req.params.id => ex) #66 (:id를 불러온다. :id는 일종의 변수 :potato�
 npm i pug로 설치
 pug를 view engine으로 설정
 pug를 views 폴더 안에 만들고, render을 해 준다.(지금 같이 src안에 views가 있으면 찾기 에러가 뜬다. 확인법 console.log(process.cwd())을 하면 /mnt/c/Users/dlrke/Documents/GitHub/wetube-reloaded cwd(현재 작업 디렉토리)가 뜬다. 왜냐하면 babel-node를 사용하여 끌어오고(?)있기 떄문에 package.json의 위치가 현재 작업 디렉토리가 된다.(server의 위치가 아니라.) )
+#5.2 정리 위치 에로 해결
+set를 이용 하여 현재 작업 디렉토리 값을 재 설정해 준다.(기본값: /views -> /views/src)
+footer처럼 공통으로 사용하는 것은 include를 사용하여 수정하기 간편하게 해 준다.
