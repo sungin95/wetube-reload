@@ -85,3 +85,6 @@ pug의 if를 활용하여 조건이 참이면 아래 식이 render되게 만들�
 #5.8 정리 each in, else
 each ? ub ?s : for ? in ?s형식과 비슷한 역할
 else만 사용하면 ?s가 비어 있을때 자동으로 작동한다.
+#5.9 정리 mixin
+mixin 은 똑똑한 partial이다.
+partial이랑 비슷하지만 include mixins/video 다음에 원하는 위치에 +video(video)를 해 줘야 한다.
