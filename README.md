@@ -82,3 +82,6 @@ href에 MVP홈페이지에서 주소를 갖고 와준다. 끝
 #{pageTitle} 이랑 =pageTitle이랑은 같다. 하지만 #은 여러개를 =은 하나만 할 수 있다.
 인위적으로 fakeUser를 만든다. (render에 fakeUser을 만들고 fakeUser를 정의해 준다. )
 pug의 if를 활용하여 조건이 참이면 아래 식이 render되게 만들어 준다.
+#5.8 정리 each in, else
+each ? ub ?s : for ? in ?s형식과 비슷한 역할
+else만 사용하면 ?s가 비어 있을때 자동으로 작동한다.
