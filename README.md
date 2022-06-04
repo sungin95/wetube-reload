@@ -99,3 +99,9 @@ a(href="edit") Edit Video &rarr; /edit랑 edit랑 차이는 /는 처음부터 /�
 #{video.views === 1 ? "view" : "views"}이렇게 하면 1이면 view, 1이 아니면 views가 나온다.
 #6.2 POST
 method로 GET of POST를 선택 할 수 있다.
+#6.3 정리
+console.log(req.body);을 이해 할려면
+app.use(express.urlencoded({ extended: true }));이게 있어야 한다.
+그럼
+{ title: 'good luck' }이런 식으로 나오는데 여기서 title은 name이다.
+주소창이 같을때, route를 쓰면 두 식을 하나로 통합 할 수 있다.
