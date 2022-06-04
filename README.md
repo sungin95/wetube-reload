@@ -93,3 +93,7 @@ const { id } = req.params;
 const id = req.params.id;이 둘은 같다.
 a(href=`/videos/${info.id}`)=info.title 이걸 통해 클릭하면 들어가는 링크를 만들 수 있다.
 (\\d+)는 /가 아니라 \이다(역슬래쉬)
+#6.1 정리
+video:video 는 같다. video 랑.
+a(href="edit") Edit Video &rarr; /edit랑 edit랑 차이는 /는 처음부터 /가 없으면 현재 위치에서.
+#{video.views === 1 ? "view" : "views"}이렇게 하면 1이면 view, 1이 아니면 views가 나온다.
