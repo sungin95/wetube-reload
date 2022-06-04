@@ -88,3 +88,8 @@ else만 사용하면 ?s가 비어 있을때 자동으로 작동한다.
 #5.9 정리 mixin
 mixin 은 똑똑한 partial이다.
 partial이랑 비슷하지만 include mixins/video 다음에 원하는 위치에 +video(video)를 해 줘야 한다.
+#6.0 정리
+const { id } = req.params;
+const id = req.params.id;이 둘은 같다.
+a(href=`/videos/${info.id}`)=info.title 이걸 통해 클릭하면 들어가는 링크를 만들 수 있다.
+(\\d+)는 /가 아니라 \이다(역슬래쉬)
