@@ -107,3 +107,5 @@ app.use(express.urlencoded({ extended: true }));이게 있기 전에는 req.body
 주소창이 같을때, route를 쓰면 두 식을 하나로 통합 할 수 있다.\
 #6.5 정리
 uploud를 추가 하였다.
+#6.6 정리 새로운 비디오 추가
+const { title } = req.body;가 input에서 작동하기 위해서는 name을 반드시 넣어줘야 한다.
