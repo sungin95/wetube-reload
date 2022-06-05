@@ -105,3 +105,5 @@ app.use(express.urlencoded({ extended: true }));이게 있기 전에는 req.body
 그럼
 { title: 'good luck' }이런 식으로 나오는데 여기서 title은 name이다.
 주소창이 같을때, route를 쓰면 두 식을 하나로 통합 할 수 있다.\
+#6.5 정리
+uploud를 추가 하였다.
