@@ -117,3 +117,6 @@ moogoose설치 db만듬
 CRUD를 할 것이고, DB를 만들 것이다.
 #6.10 정리 model, Schema
 Schema를 통해 데이터의 형식을 만들고, model화 시켜 보내준다.
+#6.11 정리
+init정리
+model.find({}, )는 콜백 함수로 값을 늦게 받는다.
