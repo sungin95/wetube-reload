@@ -1,4 +1,5 @@
 import "./db";
+import "./models/video";
 import express from "express";
 import morgan from "morgan";
 

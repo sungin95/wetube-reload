@@ -113,3 +113,7 @@ const { title } = req.body;가 input에서 작동하기 위해서는 name을 반
 on 은 수시로 발동.(error잡는데 사용)
 once는 시작할 떄 발동(open할 때 사용)
 moogoose설치 db만듬
+#6.9정리
+CRUD를 할 것이고, DB를 만들 것이다.
+#6.10 정리 model, Schema
+Schema를 통해 데이터의 형식을 만들고, model화 시켜 보내준다.
