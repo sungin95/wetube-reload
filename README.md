@@ -109,3 +109,7 @@ app.use(express.urlencoded({ extended: true }));이게 있기 전에는 req.body
 uploud를 추가 하였다.
 #6.6 정리 새로운 비디오 추가
 const { title } = req.body;가 input에서 작동하기 위해서는 name을 반드시 넣어줘야 한다.
+#6.8 정리 moogoose install
+on 은 수시로 발동.(error잡는데 사용)
+once는 시작할 떄 발동(open할 때 사용)
+moogoose설치 db만듬
