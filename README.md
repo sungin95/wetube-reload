@@ -129,7 +129,10 @@ return은 중요하지 않다. 그냥 끝내는 역할을 한다.
 video.js에서 비디오 형식을 만들고, videoController.js에서 비디오를 만든다(?)
 \_id는 mongo에서 자동으로 부여해 준다.
 하지만 여전히 mongodb에는 wetube가 없다.
-#6.16 정리
+#6.16 정리 Video.save()
 Video.save() 하면 그떄부터 wetube가 생기면서 데이터 베이스에 자료가 저장이 된다.
 Video.create방식으로도 할 수 있다.
 Video.???형식이면 다 async await형식이 필요하다고 생각하면 될 거 같다.
+#6.17
+catch (error)를 넣지 않으면 작동하지 않지만, 무한 딜레이는 되지 않는다.
+Video형식에서 default값을 주면 만드는 곳에서 신경 안써도 된다.
