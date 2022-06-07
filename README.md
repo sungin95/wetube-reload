@@ -172,3 +172,8 @@ each in을 이용하면 하나의 li를 여러개로 만들 수 있다.
 sort이용하여 최신업데이트한 파일 맨 위로 오게 바꿀 수 있다.
 console.log(req.query);를 사용하면 검색한 값을 알수 있다.
 form(method="GET") 검색은 바꾸는게 아니니까 GET를 사용한다.
+#6.27 정리 RegExp
+^처음 $마지막 i대소문자 구분X
+RegExp정규식을 사용 할 수 있게???
+let videos = [];
+videos = await Video.find를 사용 하여 videos가 닿을 수 없는 곳 까지 닿게 했음.
