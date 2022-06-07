@@ -152,3 +152,8 @@ hashtags: hashtags
 .split(",")
 .map((word) => (word.startsWith("#") ? word : `#${word}`)),
 그리고 update
+#6.22 정리 exists findByIdAndUpdate
+findByIdAndUpdate를 사용하여 save과정 없이 바로 업데이트를 할 수 있다.
+exists + 원하는 조건 을 사용하면 해당 비디오가 있는지 없는지 바로 체크 할 수 있다.
+ex) const video = await Video.exists({\_id: id });
+다만 video를 다른 곳에 보내 줘야 한다면 사용할 수 없다. 오직 true or false 용이다.
