@@ -144,3 +144,6 @@ uppercase: true 자동 대문자로 변환.
 :id([0-9a-f]{24})정규식 참고하여 찾음
 const { id } = req.params;
 const video = await Video.findById(id);이걸로 특정 id를 가진 파일을 찾을 수 있다.
+#6.20 정리 hashtags
+if (!video)이용해 오류 해결
+value=video.hashtags.join() join()을 추가해줘 []를 제거
