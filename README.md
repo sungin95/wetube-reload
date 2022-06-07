@@ -147,3 +147,8 @@ const video = await Video.findById(id);이걸로 특정 id를 가진 파일을 �
 #6.20 정리 hashtags
 if (!video)이용해 오류 해결
 value=video.hashtags.join() join()을 추가해줘 []를 제거
+#6.21 정리
+hashtags: hashtags
+.split(",")
+.map((word) => (word.startsWith("#") ? word : `#${word}`)),
+그리고 update
