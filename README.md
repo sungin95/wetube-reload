@@ -160,3 +160,9 @@ ex) const video = await Video.exists({\_id: id });
 #6.23 정리 pre
 기존의 postUpload를 손보고
 모델이 생기기 전에 해야 되서 video.js 모델 전 위치로 만듬.
+#6.24 정리
+postUpload
+hashtags: formatHashtags(hashtags),이곳에 붙이면 나는 오류가 발생하는데 니코쌤 코딩에서는 발생하지 않는다. 버전의 차이가 아닌가 생각한다.
+videoSchema가 많은걸 하네
+each in을 이용하면 하나의 li를 여러개로 만들 수 있다.
+.static는 왼쪽 이름에 오른쪽 인자를 받는 함수를 만들어준다.
