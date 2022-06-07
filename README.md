@@ -166,3 +166,5 @@ hashtags: formatHashtags(hashtags),이곳에 붙이면 나는 오류가 발생�
 videoSchema가 많은걸 하네
 each in을 이용하면 하나의 li를 여러개로 만들 수 있다.
 .static는 왼쪽 이름에 오른쪽 인자를 받는 함수를 만들어준다.
+#6.25 정리 findByIdAndDelete
+삭제하는거 만듬
