@@ -157,3 +157,6 @@ findByIdAndUpdate를 사용하여 save과정 없이 바로 업데이트를 할 �
 exists + 원하는 조건 을 사용하면 해당 비디오가 있는지 없는지 바로 체크 할 수 있다.
 ex) const video = await Video.exists({\_id: id });
 다만 video를 다른 곳에 보내 줘야 한다면 사용할 수 없다. 오직 true or false 용이다.
+#6.23 정리 pre
+기존의 postUpload를 손보고
+모델이 생기기 전에 해야 되서 video.js 모델 전 위치로 만듬.
