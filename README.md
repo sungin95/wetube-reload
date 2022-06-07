@@ -133,6 +133,10 @@ video.js에서 비디오 형식을 만들고, videoController.js에서 비디오
 Video.save() 하면 그떄부터 wetube가 생기면서 데이터 베이스에 자료가 저장이 된다.
 Video.create방식으로도 할 수 있다.
 Video.???형식이면 다 async await형식이 필요하다고 생각하면 될 거 같다.
-#6.17
+#6.17 정리
 catch (error)를 넣지 않으면 작동하지 않지만, 무한 딜레이는 되지 않는다.
 Video형식에서 default값을 주면 만드는 곳에서 신경 안써도 된다.
+#6.18 정리
+uppercase: true 자동 대문자로 변환.
+.trim() 여백 제거
+글자수 제한은 만약의 사태를 대비하기 위해 자바스크립트랑 pug 둘다 바꾸어 준다.
