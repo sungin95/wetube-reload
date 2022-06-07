@@ -140,3 +140,7 @@ Video형식에서 default값을 주면 만드는 곳에서 신경 안써도 된�
 uppercase: true 자동 대문자로 변환.
 .trim() 여백 제거
 글자수 제한은 만약의 사태를 대비하기 위해 자바스크립트랑 pug 둘다 바꾸어 준다.
+#6.19 특정 id의 파일 찾기
+:id([0-9a-f]{24})정규식 참고하여 찾음
+const { id } = req.params;
+const video = await Video.findById(id);이걸로 특정 id를 가진 파일을 찾을 수 있다.
