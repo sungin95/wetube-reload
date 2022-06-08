@@ -177,15 +177,15 @@ form(method="GET") 검색은 바꾸는게 아니니까 GET를 사용한다.
 RegExp정규식을 사용 할 수 있게???
 let videos = [];
 videos = await Video.find를 사용 하여 videos가 닿을 수 없는 곳 까지 닿게 했음.
-#7.0 정리
+#7.0 정리 user
 유저를 만듬
-#7.1 정리
+#7.1 정리 회원가입
 홈페이지에서 회원가입 정보 만들기
-#7.2 정리
+#7.2 정리 비밀번호 hash
 비밀번호 데이터베이스에서 안보이게 하기.
 npm i bcrypt
 비밀번호를 hash처리 하여 알수 없게 만들기
-#7.3 정리
+#7.3 정리 $or Confirm password 
 const exists = await User.exists({
 $or: [{ username }, { email }],
 }); 이 기능을 사용하면 여러개 조건을 한번에 할 수 있다.
