@@ -185,3 +185,7 @@ videos = await Video.find를 사용 하여 videos가 닿을 수 없는 곳 까�
 비밀번호 데이터베이스에서 안보이게 하기.
 npm i bcrypt
 비밀번호를 hash처리 하여 알수 없게 만들기
+#7.3 정리
+const exists = await User.exists({
+$or: [{ username }, { email }],
+}); 이 기능을 사용하면 여러개 조건을 한번에 할 수 있다.
