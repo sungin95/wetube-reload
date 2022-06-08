@@ -166,7 +166,7 @@ hashtags: formatHashtags(hashtags),이곳에 붙이면 나는 오류가 발생�
 videoSchema가 많은걸 하네
 each in을 이용하면 하나의 li를 여러개로 만들 수 있다.
 .static는 왼쪽 이름에 오른쪽 인자를 받는 함수를 만들어준다.
-#6.25 정리 findByIdAndDelete
+#6.25 정리 findByIdAndDeㅉlete
 삭제하는거 만듬
 #6.26 정리 search
 sort이용하여 최신업데이트한 파일 맨 위로 오게 바꿀 수 있다.
@@ -177,3 +177,5 @@ form(method="GET") 검색은 바꾸는게 아니니까 GET를 사용한다.
 RegExp정규식을 사용 할 수 있게???
 let videos = [];
 videos = await Video.find를 사용 하여 videos가 닿을 수 없는 곳 까지 닿게 했음.
+#7.0 정리
+유저를 만듬
