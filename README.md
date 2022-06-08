@@ -179,3 +179,5 @@ let videos = [];
 videos = await Video.find를 사용 하여 videos가 닿을 수 없는 곳 까지 닿게 했음.
 #7.0 정리
 유저를 만듬
+#7.1 정리
+홈페이지에서 회원가입 정보 만들기
