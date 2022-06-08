@@ -189,3 +189,6 @@ npm i bcrypt
 const exists = await User.exists({
 $or: [{ username }, { email }],
 }); 이 기능을 사용하면 여러개 조건을 한번에 할 수 있다.
+#7.4 정리 status(400).
+status(400).를 하면 더 이상 비밀번호 저장하냐를 문구가 안나온다.
+문제 되는 상황이 히스토리에 남아 대응 하기가 더욱 쉬워진다.
