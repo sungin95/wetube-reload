@@ -192,3 +192,5 @@ $or: [{ username }, { email }],
 #7.4 정리 status(400).
 status(400).를 하면 더 이상 비밀번호 저장하냐를 문구가 안나온다.
 문제 되는 상황이 히스토리에 남아 대응 하기가 더욱 쉬워진다.
+#7.5 정리
+Join and Login, getLogin, postLogin 만들기
