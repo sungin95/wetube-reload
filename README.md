@@ -210,3 +210,6 @@ req.sessionStore.all((error, sessions)
 서버는 1초마다 까먹는 치매 환자이다.
 res.locals.loggedIn = Boolean(req.session.loggedIn);
 locals.를 이용하여 middleWare에 값을 넣을 수 있다.
+#7.12 정리
+npm install connect-mongo
+store: MongoStore.create를 활용하여 로그인 정보를 데이터 베이스에서 저장 할 수 있게 한다.
