@@ -206,3 +206,7 @@ req.sessionStore.all((error, sessions)
 다른 브라우저로 오면 쿠키에 2개의 자료가 온다.
 #7.8 정리
 세션 아이디로 내가 누구인지 알 수 있다.
+#7.9 정리
+서버는 1초마다 까먹는 치매 환자이다.
+res.locals.loggedIn = Boolean(req.session.loggedIn);
+locals.를 이용하여 middleWare에 값을 넣을 수 있다.
