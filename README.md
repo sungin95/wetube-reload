@@ -200,5 +200,9 @@ const ok = await bcrypt.compare(password, user.password);
 여기서 user는 wait User.findOne({ username });한 것이다.
 #7.7정리 세션
 브라우저와 백엔드 사이 존재 하는것. 예를 들어 로그인 상태가 세션이다.
-세션을 쓰면 매번 쿠키 자료가 온다. 확인법은 console.log(req.headers);
+세션을 쓰면 매번 쿠키 자료가 온다.
+req.sessionStore.all((error, sessions)
+확인법은 console.log(req.headers);
 다른 브라우저로 오면 쿠키에 2개의 자료가 온다.
+#7.8 정리
+세션 아이디로 내가 누구인지 알 수 있다.
