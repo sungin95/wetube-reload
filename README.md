@@ -194,7 +194,11 @@ status(400).를 하면 더 이상 비밀번호 저장하냐를 문구가 안나�
 문제 되는 상황이 히스토리에 남아 대응 하기가 더욱 쉬워진다.
 #7.5 정리
 Join and Login, getLogin, postLogin 만들기
-#7.6 정리
+#7.6 정리 비밀번호 체크
 비밀번호를 같은지 체크 하는 방법은 해쉬한 번호가 내 비밀번호랑 같은지 체크하는 것이다.
 const ok = await bcrypt.compare(password, user.password);
 여기서 user는 wait User.findOne({ username });한 것이다.
+#7.7정리 세션
+브라우저와 백엔드 사이 존재 하는것. 예를 들어 로그인 상태가 세션이다.
+세션을 쓰면 매번 쿠키 자료가 온다. 확인법은 console.log(req.headers);
+다른 브라우저로 오면 쿠키에 2개의 자료가 온다.
