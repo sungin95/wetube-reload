@@ -213,3 +213,10 @@ locals.를 이용하여 middleWare에 값을 넣을 수 있다.
 #7.12 정리
 npm install connect-mongo
 store: MongoStore.create를 활용하여 로그인 정보를 데이터 베이스에서 저장 할 수 있게 한다.
+#7.13 정리
+쿠키를 지우면 새로운 유저가 나온다.
+근데 모두에게 쿠키를 주면 과부화가 오니까 로그인 한 유저에게만 주기로 한다. (2개 false)
+그리고 userController.js에
+req.session.loggedIn = true;
+req.session.user = user; 59줄
+이 로그인 하면 쿠키를 부여 해 줄 것이다.
