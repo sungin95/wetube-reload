@@ -230,3 +230,6 @@ npm i dotenv
 require("dotenv").config(); 가 env를 읽을 수 있게 해 준다.
 이게 server -> init -> env를 쓰는 모든 파일, 하지만 이 방법은 번거로우니까.
 import "dotenv/config"; 방법 사용
+#7.16 정리 깃이랑 계정 연결?
+&allow_signup=false 계정 있는 사람만 or 없는 사람도
+?client_id= (본인 Client ID)
