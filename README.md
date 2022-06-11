@@ -220,3 +220,8 @@ store: MongoStore.create를 활용하여 로그인 정보를 데이터 베이스
 req.session.loggedIn = true;
 req.session.user = user; 59줄
 이 로그인 하면 쿠키를 부여 해 줄 것이다.
+#7.14 정리
+쿠키의 유효 시간을 설정 할 수 있다.
+들키기 싫은 파일이 .env 파일에 변수화 시킬 수 있다. 이때, .gitignore에 추가 하는거 잊지 말자.
+활용법: precess.env.DB_URL
+그리고 mongoose.connect(process.env.DB_URL); db.js 여기까지 바꾸는 걸 잊지 말자.
