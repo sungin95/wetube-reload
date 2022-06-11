@@ -233,3 +233,9 @@ import "dotenv/config"; 방법 사용
 #7.16 정리 깃이랑 계정 연결?
 &allow_signup=false 계정 있는 사람만 or 없는 사람도
 ?client_id= (본인 Client ID)
+#7.17 정리 scope
+scope는 유저에게서 얼마나 많이 정보를 읽어내고 어떤 정보를 가져올 것에 대한것.
+client_id 이건 정해진 거라서 철자가 틀리면 안된다.
+scope: "read:user user:email",이렇게 두개를 설정 해 주고 연결해 주면 된다.
+Authorization callback URL
+http://localhost:4500/users/github/finish 로 이동하게 된다. (처음 설정)
