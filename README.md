@@ -225,3 +225,8 @@ req.session.user = user; 59줄
 들키기 싫은 파일이 .env 파일에 변수화 시킬 수 있다. 이때, .gitignore에 추가 하는거 잊지 말자.
 활용법: precess.env.DB_URL
 그리고 mongoose.connect(process.env.DB_URL); db.js 여기까지 바꾸는 걸 잊지 말자.
+#7.15 정리 env 불러오기
+npm i dotenv  
+require("dotenv").config(); 가 env를 읽을 수 있게 해 준다.
+이게 server -> init -> env를 쓰는 모든 파일, 하지만 이 방법은 번거로우니까.
+import "dotenv/config"; 방법 사용

@@ -23,7 +23,7 @@ app.use(
     cookie: {
       maxAge: 20000,
     },
-    store: MongoStore.create({ mongoUrl: precess.env.DB_URL }),
+    store: MongoStore.create({ mongoUrl: process.env.DB_URL }),
   })
 );
 app.use((req, res, next) => {
