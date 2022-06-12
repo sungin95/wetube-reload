@@ -239,3 +239,8 @@ client_id 이건 정해진 거라서 철자가 틀리면 안된다.
 scope: "read:user user:email",이렇게 두개를 설정 해 주고 연결해 주면 된다.
 Authorization callback URL
 http://localhost:4500/users/github/finish 로 이동하게 된다. (처음 설정)
+#7.18 정리
+참고: https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps#2-users-are-redirected-back-to-your-site-by-github
+참고: https://github.com/settings/applications/1926230
+POST 할 곳에다가 id랑 secret를 정보화 해서 보내준다.
+그리고 fetch, DataTransfer.json() 등을 사용했는데. 솔직히 뭔지 모르겠다.
