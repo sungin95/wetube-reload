@@ -244,3 +244,7 @@ http://localhost:4500/users/github/finish 로 이동하게 된다. (처음 설�
 참고: https://github.com/settings/applications/1926230
 POST 할 곳에다가 id랑 secret를 정보화 해서 보내준다.
 그리고 fetch, DataTransfer.json() 등을 사용했는데. 솔직히 뭔지 모르겠다.
+#7.19 정리
+npm i node fetch (fetch가 사용 안되니까.)
+npm install node-fetch@2.6.1 (현재 버전에서는 안된다. )
+여기는 걍 외우는것이 답인듯하다.
