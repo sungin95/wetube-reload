@@ -267,3 +267,6 @@ remove를 없애고
 Session.destroy(callback)
 세션을 파괴하고 req.session 속성을 설정 해제합니다. 완료되면 콜백이 호출됩니다.
 destroy사용. 
+#7.23 정리
+access_token 는 Github API와 상호작용 할 때 쓴다. 
+socialOnly가 true이면 Github 로그인을 통해 만들어진 계정이라는 의미. (이메일은 다르다. )
