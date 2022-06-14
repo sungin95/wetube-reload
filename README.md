@@ -257,16 +257,20 @@ emailData
 만들었음.
 
 #7.21 정리
-여기부터 현재 프로그램이 이상해서 npm을 사용 못한채로 하고 있다. 
+여기부터 현재 프로그램이 이상해서 npm을 사용 못한채로 하고 있다.
 여기 부분에서 이론상 깃허브로 계속하기 하면 쿠키가 생기고 데이터베이스에 uesrs 가 생기고 해야 하지만 쿠키만 생기고 데이터베이스에 안생겼다. 이유를 모르겠다. 몽고db의 문제라 생각해 손보다가 결국 모든 파일을 날리고 말았다....
 #7.22 정리
-socialOnly는 따로 로그인하지 않고 깃허브를 통해 들어왔다는 뜻이다. 
-그리고 joy페이지에서 가입해서 들어와도 users 가 생기고 로그인이 된다. 
-근데 로그인하고 깃에 들어가면 만들었던 정보로 유저가 생성된네. 
-remove를 없애고 
+socialOnly는 따로 로그인하지 않고 깃허브를 통해 들어왔다는 뜻이다.
+그리고 joy페이지에서 가입해서 들어와도 users 가 생기고 로그인이 된다.
+근데 로그인하고 깃에 들어가면 만들었던 정보로 유저가 생성된네.
+remove를 없애고
 Session.destroy(callback)
 세션을 파괴하고 req.session 속성을 설정 해제합니다. 완료되면 콜백이 호출됩니다.
-destroy사용. 
+destroy사용.
 #7.23 정리
-access_token 는 Github API와 상호작용 할 때 쓴다. 
+access_token 는 Github API와 상호작용 할 때 쓴다.
 socialOnly가 true이면 Github 로그인을 통해 만들어진 계정이라는 의미. (이메일은 다르다. )
+#8.0 정리
+getEdit, postEdit 를 만들고, base 손보기. 이 베이스의 loggedIn은 middlewares.js에 의해 정해진다.
+edit-profile을 만들고 loggedInUser.name을 사용한다.
+다음시간에는 /users/edit 에 로그인을 해야 들어갈 수 있게 해야 하고, loggedInUser.name이 정의가 안 되어 있다.
