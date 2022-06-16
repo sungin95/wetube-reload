@@ -283,3 +283,6 @@ name, email, username, location들은 edit-profile의 name에서 온 것들이�
 주의: mongod의 id는 \_id를 쓴다.
 데이터 베이스 값은 바뀌었지만 loggedInUser는 로그인 할때 값이다.
 user는 db와 연결이 되어 있지만, session은 db랑 연결이 안 되 있다.
+#8.3 정리 session업데이트하기
+방법1. 바로 아래에 바꾸는 식 하나 더 만들기.
+...req.session.user는 그외 정보는 이전과 동일하다를 나타낸다.
