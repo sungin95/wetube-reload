@@ -274,3 +274,6 @@ socialOnly가 true이면 Github 로그인을 통해 만들어진 계정이라는
 getEdit, postEdit 를 만들고, base 손보기. 이 베이스의 loggedIn은 middlewares.js에 의해 정해진다.
 edit-profile을 만들고 loggedInUser.name을 사용한다.
 다음시간에는 /users/edit 에 로그인을 해야 들어갈 수 있게 해야 하고, loggedInUser.name이 정의가 안 되어 있다.
+#8.1 정리
+route랑 all은 공통분모를 만든다는 점에서 비슷하지만 route은 /edit같은 공간?이고, all은 함수이다.
+userRouter에 이렇게 바꿈으로써 홈페이지에 로그인이 안된 상태로 가면 바로 로그인 페이지로 이동하게 된다.
