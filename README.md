@@ -277,3 +277,9 @@ edit-profile을 만들고 loggedInUser.name을 사용한다.
 #8.1 정리
 route랑 all은 공통분모를 만든다는 점에서 비슷하지만 route은 /edit같은 공간?이고, all은 함수이다.
 userRouter에 이렇게 바꿈으로써 홈페이지에 로그인이 안된 상태로 가면 바로 로그인 페이지로 이동하게 된다.
+#8.2 정리 비디오는 유저의 소유
+ID같은 경우 req.body가 아니라 req.session.user에서 얻어준다.
+name, email, username, location들은 edit-profile의 name에서 온 것들이고 이걸들을 안써주면 안된다.
+주의: mongod의 id는 \_id를 쓴다.
+데이터 베이스 값은 바뀌었지만 loggedInUser는 로그인 할때 값이다.
+user는 db와 연결이 되어 있지만, session은 db랑 연결이 안 되 있다.
