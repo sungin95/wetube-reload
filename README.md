@@ -287,5 +287,13 @@ user는 db와 연결이 되어 있지만, session은 db랑 연결이 안 되 있
 방법1. 바로 아래에 바꾸는 식 하나 더 만들기.
 ...req.session.user는 그외 정보는 이전과 동일하다를 나타낸다.
 { new: true } 사용하면 findByIdAndUpdaterk 업데이트된 데이터를 return.
-#8.4 비밀번호 변경
+#8.4 비밀번호 중복 체크
 pug가 너무 많아져서 users를 하나 만들어 줬다.
+#8.5 비밀번호 변경
+(1)비밀번호랑 비밀번호 재확인 이랑 같은지 비교.
+status(400)을 추가 하는 이유는 비밀번호가 중복될시, 브라우저에게 알려 주기 위해서이다.
+(2)기존의 비밀번호가 올바른지 확인.
+(3)비밀번호 바꾸기.(가끔 User가 어떤건지 까먹는데 기억하자! User.js에서 왔고, userSchema를 User로 모델화 시킨 거다. (참고로 moogoose이다. ))
+pre save middleware 거치고 User.create를 사용하는 것이다. 그리고 user.save()를 해도 pre save moddleware를 작동시킬거다.
+save를 거치면서 비밀번호가 hash가 되어 나온다.
+이때 방금 전 바꾼 비밀번호로 변경을 하면 문제가 발생하는데. 이유는 form에서 가져온 비밀번호랑, 현재 로그인된 사용자의 비밀번호를 비교해서 이다. 그러므로 session 업데이트 필수.
