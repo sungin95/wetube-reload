@@ -286,3 +286,6 @@ user는 db와 연결이 되어 있지만, session은 db랑 연결이 안 되 있
 #8.3 정리 session업데이트하기
 방법1. 바로 아래에 바꾸는 식 하나 더 만들기.
 ...req.session.user는 그외 정보는 이전과 동일하다를 나타낸다.
+{ new: true } 사용하면 findByIdAndUpdaterk 업데이트된 데이터를 return.
+#8.4 비밀번호 변경
+pug가 너무 많아져서 users를 하나 만들어 줬다.
