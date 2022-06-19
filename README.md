@@ -297,3 +297,11 @@ status(400)을 추가 하는 이유는 비밀번호가 중복될시, 브라우�
 pre save middleware 거치고 User.create를 사용하는 것이다. 그리고 user.save()를 해도 pre save moddleware를 작동시킬거다.
 save를 거치면서 비밀번호가 hash가 되어 나온다.
 이때 방금 전 바꾼 비밀번호로 변경을 하면 문제가 발생하는데. 이유는 form에서 가져온 비밀번호랑, 현재 로그인된 사용자의 비밀번호를 비교해서 이다. 그러므로 session 업데이트 필수.
+#8.6 파일 업로드
+input(type="file"을 하면 파일을 선택해서 올릴 수 있는 파일이 나온다.
+npm i multer
+step1)enctype="multipart/form-data"
+step2)middlewares에 (req, res, next) 대신 multer를 쓰는 함수를 추가한다.
+그리고 나중에는 바꾸겠지만 현재는 파일들을 하드드라이브에 저장하는걸 한다.
+var upload = multer({dest: 'uploads/'})
+uploads파일이 생긴걸 볼 수 있다. (이 부분은 다 실현된게 아니라서 다시 손좀 봐야 한다. )
