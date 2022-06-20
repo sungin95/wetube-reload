@@ -300,8 +300,20 @@ save를 거치면서 비밀번호가 hash가 되어 나온다.
 #8.6 파일 업로드
 input(type="file"을 하면 파일을 선택해서 올릴 수 있는 파일이 나온다.
 npm i multer
-step1)enctype="multipart/form-data"
+step1)enctype="multipart/form-data"파일을 업로드 하기 위한 조건.(설치, form에 enctype="multipart/form-data"추가)
 step2)middlewares에 (req, res, next) 대신 multer를 쓰는 함수를 추가한다.
 그리고 나중에는 바꾸겠지만 현재는 파일들을 하드드라이브에 저장하는걸 한다.
-var upload = multer({dest: 'uploads/'})
+const upload = multer({dest: 'uploads/'})
 uploads파일이 생긴걸 볼 수 있다. (이 부분은 다 실현된게 아니라서 다시 손좀 봐야 한다. )
+
+#현재 약간의 문제가 있지만, 이걸 고칠거면 너무 시간이 많이 걸리므로 일단 진도를 나가고 나중에 복습할때 제대로 확인하는 걸로 하자!
+현재 에러: 깃허브를 통한 로그인이 안됨.
+
+#8.7 정리
+현재 file: { path },가 프로필 사진을 바꾸지 않고 업데이트를 했을때 오류를 발생시킨다.
+Cannot read properties of undefined (reading 'path')
+avatarUrl: file ? file.path : avatarUrl,이걸로 문제를 해결
+그리고 절!대! DB에는 파일을 저장하지 않는다.
+DB에는 파일 위치만 저장한다.
+src="/" + loggedInUser.avatarUrl
+파일은 갔지만 express한테 uploads간다 말한적 없다. 다음시간에
