@@ -33,6 +33,7 @@ app.use((req, res, next) => {
   });
 });
 app.use(localsMiddleware);
+app.use("/uploads", express.static("uploads"));
 app.use("/", rootRouter);
 app.use("/users", userRouter);
 app.use("/videos", videoRouter);

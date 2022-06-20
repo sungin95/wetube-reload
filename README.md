@@ -316,4 +316,9 @@ avatarUrl: file ? file.path : avatarUrl,이걸로 문제를 해결
 그리고 절!대! DB에는 파일을 저장하지 않는다.
 DB에는 파일 위치만 저장한다.
 src="/" + loggedInUser.avatarUrl
-파일은 갔지만 express한테 uploads간다 말한적 없다. 다음시간에
+파일은 갔지만 express한테 uploads간다 말한적 없다.(브라우저가 서버에 있는 파일에 접근할 수 없으니까) 다음시간에
+#8.8 정리
+브라우저가 어떤 페이지와 폴더를 볼 수 있는지 알려줘야함.
+app.use("/uploads", express.static("uploads"));
+/uploads 로 오면 "uploads"파일로 가라는 소리임.
+이 방법의 문제점은 파일이 서버에 저장된다는 것이고, 서버가 죽었을때 ㅇㅂ로드된 파일들이 있다면, 파일은 날린다.
