@@ -325,3 +325,11 @@ app.use("/uploads", express.static("uploads"));
 #8.9 정리
 multer는 req.file을 제공해 준다. 그리고 limits랑 같이 쓰면 용량 제한 가능
 video(src="/" + video.fileUrl, controls)이게 동영상을 재생할 수 있게 해 주는 pug명령어.
+#8.10 정리 다른유저 보기, 누가 올린 영상인지 알려주기
+우리가 올린 영상을 다른 유저가 볼 수 있고, 누가 올린 영상인지 보여주는 방법.
+video: owner, user: videoList를 가져야 한다.
+userController.js const see
+
+1. id를 갖고 와야 하는데 session이 아니라, 모든 사람들이 볼 수 있는 URL에서 갖고 온다.
+   url를 갖고 있으면 로그아웃 된 상태에서도 들어 올 수 있다.
+   다음시간 어떻게 video를 user와 연결 시킬 수 있을까?(그 전에 비디오랑 유저데이터 모두 삭제해야 한다. )
