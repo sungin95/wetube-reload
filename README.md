@@ -322,3 +322,6 @@ src="/" + loggedInUser.avatarUrl
 app.use("/uploads", express.static("uploads"));
 /uploads 로 오면 "uploads"파일로 가라는 소리임.
 이 방법의 문제점은 파일이 서버에 저장된다는 것이고, 서버가 죽었을때 ㅇㅂ로드된 파일들이 있다면, 파일은 날린다.
+#8.9 정리
+multer는 req.file을 제공해 준다. 그리고 limits랑 같이 쓰면 용량 제한 가능
+video(src="/" + video.fileUrl, controls)이게 동영상을 재생할 수 있게 해 주는 pug명령어.
