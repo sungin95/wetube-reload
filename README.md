@@ -342,3 +342,7 @@ owner: { type: mongoose.Schema.Types.ObjectId, required: true, ref: "User" },
 video에 owner추가 하는 작업끝
 2단계 특정 사용자가 업로드한 모든 영상을 볼 수 있게 만드는것!
 profile의 videos가 특정 유저의 id와 owner id 가 같은 video만 가져온다.
+#8.13 one owner는 여러개의 video를 가진다.
+비디오를 만들면 그걸 user의 videos.push를 하고 저장을 해 준다.
+그리고 user/profile에서 user.videos를 이용하여 보여준다.
+다음 영상은 owner만이 영상을 수정하거나 삭제 할 수 있게 하는 것이다. 그리고 영상을 업로드 할 때마다 비밀번호가 바뀌는 버그까지 수정.
