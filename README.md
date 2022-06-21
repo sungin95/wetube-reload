@@ -334,3 +334,11 @@ url를 갖고 있으면 로그아웃 된 상태에서도 들어 올 수 있다.
 다음시간 어떻게 video를 user와 연결 시킬 수 있을까?(그 전에 비디오랑 유저데이터 모두 삭제해야 한다. )
 #8.11 정리 user랑 video랑 연결하기
 owner을 추가 하고 비디오를 새롭게 업로드 하고 find해 보면 owner가 추가 되어 있는것을 볼 수 있다.
+#8.12 owner 대신 populate를 사용하기
+mongoose가 video를 찾고 그 안에 owner도 찾아 준다.
+populate가 user정보 모두를 갖고 와 준다.
+owner: { type: mongoose.Schema.Types.ObjectId, required: true, ref: "User" },
+위 문장이 id를 저장(?)하고 mongoose에 이 id가 User model에서 왔다는 뜻
+video에 owner추가 하는 작업끝
+2단계 특정 사용자가 업로드한 모든 영상을 볼 수 있게 만드는것!
+profile의 videos가 특정 유저의 id와 owner id 가 같은 video만 가져온다.
