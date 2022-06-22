@@ -375,3 +375,8 @@ rules 사용 할 것이다.
 javascript코드를 babel-loader라는 loader로 가공하는 것.
 'development' or 'production'이 옵션이 뜨는데 개발중으로 선택해야 코드가 압축이 안된다. (개발중에는 내가 어떻게 했는지 봐야 하니까. )
 추가: mode: "development",
+#9.3 express한테 assets안에 main.js가 있다고 알려주기
+app.use("/assets", express.static("assets"));통하여 브라우저가 assets폴더에 접근할 수 있게 해 주기.
+base.pug파일이 main.js를 불러ㅓ 올 수 있도록 하기.
+script(src="/static/js/main.js")이게 main.js파일을 불러오게 된다.
+http://localhost:4700 여기에서 hi가 나온다.
