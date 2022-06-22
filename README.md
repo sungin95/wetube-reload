@@ -369,3 +369,9 @@ entry 내가 처리하고자 하는 코드
 client폴더 안에 있는 코드들은 서버가 아니라, 브라우저에서 실행될 것이다.
 main.js를 webpack에 전달해 주면 이해 할 수 있는 코드로 변환 할 것이다.
 absolute path가 필요함 이건 다음시간에!!!
+#9.2 absolute path 해결
+npm run assets으로 코드를 압축 할 수 있다.
+rules 사용 할 것이다.
+javascript코드를 babel-loader라는 loader로 가공하는 것.
+'development' or 'production'이 옵션이 뜨는데 개발중으로 선택해야 코드가 압축이 안된다. (개발중에는 내가 어떻게 했는지 봐야 하니까. )
+추가: mode: "development",
