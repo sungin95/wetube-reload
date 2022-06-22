@@ -380,3 +380,11 @@ app.use("/assets", express.static("assets"));통하여 브라우저가 assets폴
 base.pug파일이 main.js를 불러ㅓ 올 수 있도록 하기.
 script(src="/static/js/main.js")이게 main.js파일을 불러오게 된다.
 http://localhost:4700 여기에서 hi가 나온다.
+#9.4
+에러가 뜨는데 원인은 이 파일로 무엇을 해야 할지 몰라서 발생.
+npm install sass-loader sass webpack --save-dev
+npm install --save-dev css-loader
+npm install --save-dev style-loader
+use: ["styles-loader", "css-loader", "sass-loader"],역순으로 입력
+npm run assets 해주면 main.js가 실행되고 import한 scss가 실행되고 값이 홈페이지에 html에 입력이 된다.
+다음시간에는 몇 문제점이 있는데 그걸 해결 한다.
