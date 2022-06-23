@@ -402,3 +402,5 @@ watch: true, 기능으로 새로 바뀔 때 마다 업데이트를 해 준다.
 clean: true,(이건 webpack이 재시작 할때 기존의 폴더를 지우고 다시 하는 것이다.watch때 말고 npm run assets을 다시 할 때)
 "nodemon", "webpack"들은 자동으로 해당 파일을 찾는다. 그외 파일로 작업할 떄는
 --config webpack.config.js이런식으로 config를 붙여준다.
+#10.0 이제 css
+text-decoration: none;이게 보라색링크 없애주는거.
