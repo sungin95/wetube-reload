@@ -392,3 +392,13 @@ npm run assets 해주면 main.js가 실행되고 import한 scss가 실행되고 
 npm install --save-dev mini-css-extract-plugin
 설치하고 webpack에 3개 추가 하고
 npm run assets을 해 준다.
+#9.6 자동업데이트 기능
+watch: true, 기능으로 새로 바뀔 때 마다 업데이트를 해 준다.
+그래서 하나는 npm run dev로 백앤드를 구동하고
+다른 하나는 npm run assets 로 client파일들을 watch
+(단, 이 둘을 동시에 작동하지 않으면 에로가 발생 할 수 있다. )
+하지만 front-end자바스크립트 코드가 변경 된다고 back-end가 다시 시작되는 것은 별로다.
+방법은 package.json을 nodemon.json을 사용하게 하고 ignore을 설정해 준다.
+clean: true,(이건 webpack이 재시작 할때 기존의 폴더를 지우고 다시 하는 것이다.watch때 말고 npm run assets을 다시 할 때)
+"nodemon", "webpack"들은 자동으로 해당 파일을 찾는다. 그외 파일로 작업할 떄는
+--config webpack.config.js이런식으로 config를 붙여준다.
