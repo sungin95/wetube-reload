@@ -404,3 +404,6 @@ clean: true,(이건 webpack이 재시작 할때 기존의 폴더를 지우고 �
 --config webpack.config.js이런식으로 config를 붙여준다.
 #10.0 이제 css
 text-decoration: none;이게 보라색링크 없애주는거.
+| 아이콘과 글씨를 분리해 준다. 없으면 아이콘안에 글씨가 들어간다.
+#11.0 player만들기
+filename: "js/[name].js",안쓰면 파일 충돌
