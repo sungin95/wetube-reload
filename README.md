@@ -407,3 +407,8 @@ text-decoration: none;이게 보라색링크 없애주는거.
 | 아이콘과 글씨를 분리해 준다. 없으면 아이콘안에 글씨가 들어간다.
 #11.0 player만들기
 filename: "js/[name].js",안쓰면 파일 충돌
+#11.1
+input:not(input[type="range"])특정 상황에서는 적용을 안되게 만들 수 있다.
+input(type="range",step="0.1", min="0", max="1")이걸로 1단씩 바뀌는 바를 만들 수 있다. (step 기억!)
+비디오를 플레이를 하고 정지를 하고 이때 이름을 바꾸어 보여주고 handlePlay내용.
+다음시간에는 음소거 ,해제에 대해.
