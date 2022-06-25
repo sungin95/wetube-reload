@@ -424,3 +424,7 @@ loadeddata이걸로 29.568 이런식으로 전체 시간을 알 수 있다.
 Math.floor or Math.ceil 을 사용한다. (내림 or 올림)
 timeupdata 이런 현재플레이 시간.
 다음시간에는 플레이 시간 바를 만든다.
+#11.5 time
+date Constructor 는 js안에 있는 date class를 말한다.
+new Date(9\*1000).toISOString().substring(11,19(11 + 8이다))
+이러면 현재 시간을 기준으로 시간을 잘라서(?) 사용할 수 있다.
