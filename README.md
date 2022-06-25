@@ -419,3 +419,8 @@ input(type="range",step="0.1", min="0", max="1")이걸로 1단씩 바뀌는 바�
 #11.3 volume
 change이벤트 사용. 이건 마우스를 놓을때 작용한다.
 input을 사용해야 실시간으로 바뀐다.
+#11.4 time
+loadeddata이걸로 29.568 이런식으로 전체 시간을 알 수 있다.
+Math.floor or Math.ceil 을 사용한다. (내림 or 올림)
+timeupdata 이런 현재플레이 시간.
+다음시간에는 플레이 시간 바를 만든다.
