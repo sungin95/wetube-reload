@@ -432,6 +432,15 @@ new Date(9\*1000).toISOString().substring(11,19(11 + 8이다))
 비디오 플에이 시간 바의 최대시간을 만든다.
 timeupdate는 비디오 시간이 변경되는 것을 감지하는 event.
 재생에 따라 바를 이동 시킬 거면 value를 손 봐야 한다.
-#11.7
+#11.7 Full screen enter & exit
 API를 이용한 풀 스크린 만들기
 video.requestFullscreen();클릭하면 이걸 실행하게 하면 된다.
+document.fullscreenElement
+풀스크린 상태가 아니면 null, 풀스크린 상태면 해당 html위치가 뜬다.
+그래서 이게 null인지 아닌지로 상태를 알 수 있고 이를 이용하여 이름을 바꾸어 줄 것이다.
+#11.8 mousemove
+video로 마우스가 가면 class가 추가 된다.
+마우스가 떠나면 class가 삭제되는데 3초 뒤에 한다.
+그러면 3초 안에 다시 들어 오면 오류가 발생하는데. 그걸 해결하기 위해
+clearTimeout 이랑 지역변수를 글로벌 변수화 시키기 위해 let controlsTimeout를 만들어 주었다.
+다음 강의는 마우스를 멈추면 컨트롤러를 감추는 기능을 만들 예정이다.
