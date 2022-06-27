@@ -428,3 +428,10 @@ timeupdata 이런 현재플레이 시간.
 date Constructor 는 js안에 있는 date class를 말한다.
 new Date(9\*1000).toISOString().substring(11,19(11 + 8이다))
 이러면 현재 시간을 기준으로 시간을 잘라서(?) 사용할 수 있다.
+#11.6 Timeline
+비디오 플에이 시간 바의 최대시간을 만든다.
+timeupdate는 비디오 시간이 변경되는 것을 감지하는 event.
+재생에 따라 바를 이동 시킬 거면 value를 손 봐야 한다.
+#11.7
+API를 이용한 풀 스크린 만들기
+video.requestFullscreen();클릭하면 이걸 실행하게 하면 된다.
