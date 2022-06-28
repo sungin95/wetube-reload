@@ -453,7 +453,12 @@ clearTimeout 이랑 지역변수를 글로벌 변수화 시키기 위해 let con
 video-player.scss(수정하기)
 해결: keydown을 사용하면, e.key에 내가 눌렸던 키 값이 나오는데.
 if (e.key == " ")을 활용하여 스페이스를 눌렸을때, 재생이 실행 되도록 하였다.
-#12.0
+#12.0 조회수 올리기
 요즘은 백엔드에서 렌더링 하지 않는다.
 프론트는 리액트, 바닐라js등을 주로 이용. 이 강의에서는 SSR을 사용.
 API는 프론트엔드와 백엔드가 서버를 통해 통신하는 방법.
+#12.1 ended활용
+ended 영상이 끝나면 반응하는 명령어.
+현재 id를 videoPlayer.js로 못넘기고 있는데 이걸 해결하기 위해
+data attribuew를 사용. 프론트엔드와 백엔드의 데이터 교환 방법
+watch에서 (data-Id=video.\_id)해 주면, videoContainer.dataset가 id를 기억한다.
