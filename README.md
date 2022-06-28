@@ -462,3 +462,6 @@ ended 영상이 끝나면 반응하는 명령어.
 현재 id를 videoPlayer.js로 못넘기고 있는데 이걸 해결하기 위해
 data attribuew를 사용. 프론트엔드와 백엔드의 데이터 교환 방법
 watch에서 (data-Id=video.\_id)해 주면, videoContainer.dataset가 id를 기억한다.
+#12.2
+마지막에 다 되었는데 보내지 못한 이유는 status는 끝내지 못하는 다음으로 이어지는 코드라서이다. sendStatus로 끝을 내 준다. 상태코드를 보면 state200으로 잘 되어 있다.
+다음에는 댓글기능을 만들거고, 그때 상태 코드를 사용하게 될 것이다.
