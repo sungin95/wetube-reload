@@ -462,6 +462,14 @@ ended 영상이 끝나면 반응하는 명령어.
 현재 id를 videoPlayer.js로 못넘기고 있는데 이걸 해결하기 위해
 data attribuew를 사용. 프론트엔드와 백엔드의 데이터 교환 방법
 watch에서 (data-Id=video.\_id)해 주면, videoContainer.dataset가 id를 기억한다.
-#12.2
+#12.2 조회수 마지막
 마지막에 다 되었는데 보내지 못한 이유는 status는 끝내지 못하는 다음으로 이어지는 코드라서이다. sendStatus로 끝을 내 준다. 상태코드를 보면 state200으로 잘 되어 있다.
 다음에는 댓글기능을 만들거고, 그때 상태 코드를 사용하게 될 것이다.
+#13.0
+getUserMedia(navigator.mediaDevices.getUserMedia)를 사용
+regeneratorRuntime error가 뜨는데(나는 비슷하지만 다른 에로가 떳다.)이걸 해결하기 위해 저걸 설치를 해야 한다.
+npm i regenerator-runtime
+#13.1 카메라 작동시키기
+watch video는 sre를 줬는데 upload video에서는 function이 src를 주기 때문에 따로 설정해 두지 않는다.
+카메라 작동 완료!!!
+다음시간에는 카메라로 녹화하고 다운로드까지 완료!!!
