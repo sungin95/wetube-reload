@@ -473,3 +473,8 @@ npm i regenerator-runtime
 watch video는 sre를 줬는데 upload video에서는 function이 src를 주기 때문에 따로 설정해 두지 않는다.
 카메라 작동 완료!!!
 다음시간에는 카메라로 녹화하고 다운로드까지 완료!!!
+#13.2
+MediaRecorder 이용 녹화 도움.
+현재의 미리보기 기능을 녹화로 바꾸어야 한다.
+startBtn.removeEventListener("click", handleStart);이거 쓰면 그냥 바뀐다. 신기하고 편하다. 굉장히 복잡한 과정이라고 생각했는데.
+다음에는 다운로드 기능 구현
