@@ -482,3 +482,11 @@ startBtn.removeEventListener("click", handleStart);이거 쓰면 그냥 바뀐�
 비디오가 존재만 할 뿐, 접근이 안되었어는데. 그걸 가능하게 바꾸었다.
 #13.4 video를 다운로드 저장 할 수 있다!
 mp4는 할 수 없다. 에로가 뜬다.(지원하지 않는 형식, 현재 내 컴퓨터 기준)
+#14.0 FF = FFmpeg WebAssemble
+WebAssemble
+유튜브랑은 다르게 서버가 아닌 유저 컴퓨터가 파일 변환을 하게 할 것이다.
+FFmpeg는 c언어 인데 이걸 WebAssemble로 변환하여 프론트에서 사용 가능 하게 할 것이다.
+ffmpeg.wasm 설치 필요.
+npm install @ffmpeg/ffmpeg @ffmpeg/core
+#14.1
+브라우저에 URL 주소 + blob를 함께 입력하면
