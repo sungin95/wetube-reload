@@ -490,3 +490,5 @@ ffmpeg.wasm 설치 필요.
 npm install @ffmpeg/ffmpeg @ffmpeg/core
 #14.1
 브라우저에 URL 주소 + blob를 함께 입력하면
+#14.2
+mp4형식의 비디오 만드는데 성공.
