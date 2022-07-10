@@ -1,4 +1,4 @@
-import Video from "../models/video";
+import Video from "../models/Video";
 import Comment from "../models/Comment";
 import User from "../models/User";
 
@@ -143,7 +143,7 @@ export const createComment = async (req, res) => {
     video: id,
   });
   video.comments.push(comment._id);
-  console.log(comment._id);
+  console.log(video.comments);
   video.save();
   return res.sendStatus(201);
 };
